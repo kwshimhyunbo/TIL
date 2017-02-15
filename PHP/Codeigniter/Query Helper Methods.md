@@ -1,4 +1,4 @@
-#Query_helper
+#Query Helper Methods
 
 모델쪽 작업을 하다보면 헬퍼의 도움을 받는것이 속편하다.
 그 대표적인 케이스가 아래 세가지이다.
