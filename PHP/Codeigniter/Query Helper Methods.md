@@ -15,6 +15,15 @@
 
         $sql = $this->db->last_query()
 
+4.전체 카운트를 가져올때는 count_all_results를 이용하자. bad case의 경우에는 모든 레코드를 가져와 메모리에 등록한 뒤 데이터를 모두 순회하여 처리하게되지만 good case의 경우에는 메모리에 올리는 경우가 사라지게 되니 첫째로, 메모리낭비를 줄일 수 있다. 또한 bad case의 경우를 과장되게 생각해보자면 데이터가 10만건 이상이라면 모두다 가져온뒤 카운트만 세고 버려질텐데 이것은 낭비가 아니겠는가. good case를 익히도록 노력하자.
+
+        //bad
+        $count = count($this->db->get()->result());
+
+        //good
+        $count = $this->db->get()->count_all_results();
+
+
 
 
 [참고자료](http://www.ciboard.co.kr/user_guide/kr/database/helpers.html)
