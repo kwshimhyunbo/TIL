@@ -21,7 +21,7 @@
         $count = count($this->db->get()->result());
 
         //good
-        $count = $this->db->get()->count_all_results();
+        $count = $this->db->count_all_results();
 
 
 
