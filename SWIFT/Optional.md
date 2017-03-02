@@ -88,3 +88,10 @@ let x라는 상수에 Optional String을 붙여준다는 것은 다음과 같다
         display.text = s ?? ""
 
 s가 nil이 아니라면 값을 추출해 저장할 것이고 nil이면 ""를 사용하겠다는 것이다.
+
+##다섯번째
+
+        let optionalEmail: String? = "adslbna2@naver.com"
+        let requiredEmail: String = optionalEmail // 컴파일 에러!
+
+위의 구문을 보면 OptionalString인 OptionalEmail에 값이 저장이 되었다. 정확하게 String이 저장되었지만 애초에 OptionalString으로 선언되었기때문에 nil 일수 있는 여지를 둔것이다. 하지만 밑의 requiredEmail에서는 꼭 값을 가지고 있어야하는 String타입이기 때문에 이것은 Swift에서 구문에러로 표시된다. [예제 출처](https://devxoul.gitbooks.io/ios-with-swift-in-40-hours/content/Chapter-2/optionals.html)
