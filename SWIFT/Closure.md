@@ -48,3 +48,12 @@
                 return $1 + $2 + msg
         }
 return은 생략을 할 수 있으므로 위와같이 간결한 형태로 만들어질 수 있다.
+
+##변수처럼 사용하는 Closure
+
+        let hello: (String, String) -> String = { $1 + $0 + "hi!" }
+
+*만약 함수의 마지막 파라미터가 클로저라면, 괄호와 파라미터 이름마저 생략해버릴 수 있다.*
+
+
+[참고자료](https://devxoul.gitbooks.io/ios-with-swift-in-40-hours/content/Chapter-3/functions-and-closures.html)
