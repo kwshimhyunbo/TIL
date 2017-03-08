@@ -62,3 +62,10 @@ willSet, didSet은 값이 초기화되는 시점을 기준으로 전(willSet), �
         print(test) // 1
 
 100으로 초기화 되기전의 값이 1이므로 test에 1을 초기화 시킨다.
+
+### Lazy Initialization
+늦은 초기화를 할 수 있다. 코드 로직상 거쳐가면서 무조건 실행되는것이 아니라 무언가의 호출에 의해, 무언가의 쓰임이 발생하였을 때 호출되면 그제서야 초기화를 진행하는 기능이다. 단지 초기화가 늦게 된다.
+
+        lazy var brain = CalculatorBrain()
+
+        
