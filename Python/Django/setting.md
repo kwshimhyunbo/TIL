@@ -1,14 +1,15 @@
-#Django 첫 페이지를 향한 큰그림
+# Django 첫 페이지를 향한 큰그림
 
 pyenv : "Simple Python Version Management", 로컬에 다양한 파이썬 버전을 설치하고 사용할 수 있도록 한다. pyenv를 사용함으로써 파이썬 버전에 대한 의존성을 해결할 수 있다.
+
 virtualenv : “Virtual Python Environment builder”, 로컬에 다양한 파이썬 환경을 구축하고 사용할 수 있도록 한다. 일반적으로 Python Packages라고 부르는 ( pip install을 통해서 설치하는 ) 패키지들에 대한 의존성을 해결할 수 있다.
 [출처](https://dobest.io/how-to-set-python-dev-env/)
 
-#python 설치하기
+# python 설치하기
 
         https://www.python.org/downloads/
 
-#pyenv 설치하기
+# pyenv 설치하기
 
         $ brew update  
         $ brew install pyenv  
@@ -46,7 +47,7 @@ virtualenv : “Virtual Python Environment builder”, 로컬에 다양한 파�
           local
           my-virtual-env-3.5.2
 
-#virtualenv 설치하기
+# virtualenv 설치하기
 
         $ brew install pyenv-virtualenv  
         $ echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bash_profile  
@@ -64,7 +65,7 @@ virtualenv : “Virtual Python Environment builder”, 로컬에 다양한 파�
 
         if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
-##프로젝트 만들기
+## 프로젝트 만들기
 
         django-admin startproject mysite
 
