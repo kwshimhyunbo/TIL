@@ -1,4 +1,4 @@
-#Range
+# Range
 Range는 스위프트에서 시작부분의 인덱스와 끝부분의 인덱스, 두가지의 포인트를 가진다.
 
         struct Range<T> {

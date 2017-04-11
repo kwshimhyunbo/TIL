@@ -1,10 +1,10 @@
-#DataStruct
-##Class, Struct, enum
+# DataStruct
+## Class, Struct, enum
 
 세개 자료구조 모두 프로퍼티, 함수를 가질 수 있다. 다만 enum은 저장 프로퍼티는 가질 수 없다. 또한 초기화 함수도 가질 수 있지만 enum은 초기화함수를 가질 필요가 없다.
 값을 구분하는 역할만 한다.
 
-###Class
+### Class
 
         class Calculator
         {
@@ -13,7 +13,7 @@
 
 다른 자료구조와 다르게 가장 큰 특징은 상속이 있다. 또,다른자료구조들은 값복사에 의한 전달을 사용하는 한편,  Class는 레퍼런스 타입이라 모든 값에 대한 전달을 참조에 의한 전달로 수행하여 메모리 주소값을 전달한다. (힙 메모리)
 
-###Struct, enum        
+### Struct, enum        
 
         struct Vertex
         {

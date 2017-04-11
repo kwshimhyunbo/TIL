@@ -1,4 +1,4 @@
-#옵셔널
+# 옵셔널
 
         var count: UIImage?
 
@@ -7,7 +7,7 @@
         var count: Int?
         count = 3
 
-#Optional is just an enum
+# Optional is just an enum
 옵셔널은 단순히 enum으로 생각하고 이해하자.
 
         enum Optional<T> {
@@ -15,7 +15,7 @@
           case Some(T)
         }
 간단하게 예제로 살펴보자.
-##첫번째
+## 첫번째
 
         let x: String? = nil
 
@@ -25,7 +25,7 @@ let x라는 상수에 Optional String을 붙여준다는 것은 다음과 같다
 
 상수 x에는 옵셔널의 Switch문을 타게 되는데 할당되는 nil은 아무것도 없는 값이기 때문에 None으로 빠지게 된다.
 
-##두번째
+## 두번째
 
         let x: String? = "hello"
 
@@ -35,7 +35,7 @@ let x라는 상수에 Optional String을 붙여준다는 것은 다음과 같다
 
 정확하게 같은 의미가 된다.
 
-##세번째
+## 세번째
 
         let y = x!
 

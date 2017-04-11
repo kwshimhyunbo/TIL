@@ -1,4 +1,4 @@
-#Function의 활용
+# Function의 활용
         func helloMachine(msg: String) -> (String, String) -> String{
             func hello(first: String, second: String) -> String{
                 return first + second + msg
@@ -11,7 +11,7 @@
 
 위처럼 함수안에 함수를 만들 수 있다. helloMachine은 String을 받아 hello라는 func를 반환하는데, 그 반환하는 함수는 String 두개를 받아 String을 반환하는 형식으로 표현할 수 있다.
 
-#클로저
+# 클로저
 
 클로저는 {()}로 이뤄진 익명함수로 코드블럭을 의미한다. 따로 함수명을 정의할 필요가 없으며 함수를 보다 간결하게 표현하여 가독성을 높일 수 있는 효과가 있다.
 위의 Function활용 예제를 줄여보자.
@@ -49,7 +49,7 @@
         }
 return은 생략을 할 수 있으므로 위와같이 간결한 형태로 만들어질 수 있다.
 
-##변수처럼 사용하는 Closure
+## 변수처럼 사용하는 Closure
 
         let hello: (String, String) -> String = { $1 + $0 + "hi!" }
 

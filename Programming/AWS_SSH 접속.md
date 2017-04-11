@@ -1,4 +1,4 @@
-#AWS SSH 접속
+# AWS SSH 접속
 
         ssh -i "init.pem" '서버주소'
 
