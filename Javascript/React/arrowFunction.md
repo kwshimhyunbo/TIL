@@ -1,8 +1,8 @@
-#arrowFunction
+# arrowFunction
 
 ES6에서 함수를 표현하는 또다른 문법
 *let 함수명 = 변수 => 결과(리턴)*
-##변화전
+## 변화전
 
         let one = (a) => a*a;
 
@@ -14,7 +14,7 @@ ES6에서 함수를 표현하는 또다른 문법
         }
         let four = () => a;
 
-##변화후
+## 변화후
 
         "use strict";
 

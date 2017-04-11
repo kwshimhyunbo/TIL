@@ -1,4 +1,4 @@
-#State
+# State
 동적인 변수를 만들때 사용
 
 간단히 생각하자면 미리 셋팅된 컴포넌트 데이터를 바꿀 수 있다.
@@ -10,7 +10,7 @@
             return (
                 <div>
                   <h2>{this.state.value} </h2>
-                  <button onClick={this.handleClick}>ClickMe</button>
+                  <button onClick={this.handeClick}>ClickMe</button>
                 </div>
             )
           }
