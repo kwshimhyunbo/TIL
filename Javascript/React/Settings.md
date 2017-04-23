@@ -1,6 +1,9 @@
 # 작업환경 설정
 
-# WEBPACK 설치
+# Global Dependency
+
+## WEBPACK 설치
+
                 sudo apt-get install -g webpack webpack-dev-server
 
 1. WEBPACK : 브라우저에서 import를 할 수 있게 해주고, js파일을 번들링한다.
