@@ -24,4 +24,10 @@
                     <View style={styles.Ccom} />
                 </View>
 
-전체 flex값이 1일때 각각의 컴포넌트들은 세로로 1:2:3의 비율로 나눠 가진다.
+전체 flex값이 1일때 각각의 컴포넌트들은 가로로 1:2:3의 비율로 나눠 가진다.
+
+## flexDirection
+
+                flexDirection: 'row'
+
+flex에서는 Default값은 column이다.
