@@ -6,4 +6,6 @@
 
                 module.exports = upperCaser;
 
+
+## Solution
 입력받은 값을 *toUpperCase* function을 이용하여 return 한다.
