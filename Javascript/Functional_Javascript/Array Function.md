@@ -12,3 +12,11 @@
 2.  요소 인덱스
 3.  순회(traverse)되는 배열 객체
     arr과 같다.
+
+### Example
+
+var test2 = users.filter(function(user, index, object){
+return user.id > 3;
+})
+
+console.log(test2);
