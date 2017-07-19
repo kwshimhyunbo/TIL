@@ -22,6 +22,7 @@
 
         //good
         $count = $this->db->count_all_results();
+5.하나의행만얻고싶을때
 
 
 
