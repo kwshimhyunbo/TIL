@@ -44,3 +44,26 @@ C != flex-items (일반적인 요소
 
 - justify-content (가로정렬)
 - align-items (세로정렬)
+
+# Axis
+
+축은 기본적으로 2가지가 있다.
+
+- main axis
+- cross axis
+
+main axis 는 justify-content를 따르고 cross axis는 align-items를 따른다.
+default로 flex 는 direction이 row 로 방향을 잡고 있기 때문에 가로로 아이템들이 배치된다.
+
+```
+{
+    flex-direction : row; //default,  main axis > 수평
+}
+```
+
+```
+{
+    flex-direction : column; //cross axis > 수직
+}
+```
+
