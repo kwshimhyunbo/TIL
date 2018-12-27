@@ -37,7 +37,7 @@ A = flex-contatiner
 
 B = flex-items
 
-C != flex-items (일반적인 요소
+C != flex-items (일반적인 요소)
 
 
 # flex 에서 사용할 수 있는 함수 몇가지
@@ -66,4 +66,15 @@ default로 flex 는 direction이 row 로 방향을 잡고 있기 때문에 가�
     flex-direction : column; //cross axis > 수직
 }
 ```
+
+
+# Flex-wrap
+속성
+- wrap
+- nowrap (default)
+
+아이템의 컨텐츠가 표현되는 영역을 벗어날 경우에 어떠한 형식으로 보여줄 지에 대해서 결정하는 속성이다.
+
+nowrap 일 경우 최대한 압축해서 그 행에 모든걸 보여주지만, wrap일 경우 컨텐츠를 최대한 확보해서 보여준다.
+
 
