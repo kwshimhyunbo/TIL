@@ -23,13 +23,36 @@ flex는 충분히 좋은 시스템이지만 아이템 사이의 간격을 표현
 display : grid
 ``` 
 
-
-
-
 ## functions
-
+레이아웃을 짜는 방법으로 다음이 있다.
 - grid-template-columns
 - grid-template-rows
 - grid-gap
+- grid-auto-rows 
+- grid-auto-columns 
+- grid-auto-flows (열이 쌓이는 방향)
+
+## grid-template-areas
+레이아웃을 이름으로 구분하는 방법
+
+각 class 마다 이름을 지정해서 구분 및 레이아웃할 수 있다.
+
+```
+    .father {
+        display: grid;
+        grid-auto-rows: 300px;
+        grid-template-areas: "header header header" "content content sidebar" "content content sidebar" "footer footer footer";
+        grid-gap: 5px;
+    }
+
+    .first {
+        grid-area : header;
+        background-color: #7056dc;
+    }
+    
+```
+
+
+
 
 
