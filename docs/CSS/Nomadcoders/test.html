@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .father {
+            display : grid;
+            grid-auto-rows: 300px;
+            /* grid-auto-rows: 350?px; */
+            height: 1000px;
+            grid-template-rows: 1fr 2fr 1fr 2fr;
+            /* grid-template-columns: 2fr repeat(3, 1fr) */
+        }
+
+        .first {
+            background-color: black
+        }
+
+        .second {
+            background-color: yellow
+        }
+
+        .third {
+            background-color: red
+        }
+
+        .fourth {
+            background-color: blueviolet
+        }
+    </style>
+</head>
+<body>
+
+    <div class="father">
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+        <div class="fourth"></div>
+    </div>
+    
+</body>
+</html>
