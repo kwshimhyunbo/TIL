@@ -25,8 +25,8 @@ display : grid
 
 ## functions
 레이아웃을 짜는 방법으로 다음이 있다.
-- grid-template-columns // fraction possible
-- grid-template-rows // fraction
+- grid-template-columns // fr possible
+- grid-template-rows // fr
 - grid-template-areas // 이름을 지정하여 구분
 
 - grid-gap //컨텐츠 사이의 갭을정한다.
@@ -35,10 +35,15 @@ display : grid
 - grid-auto-columns (거의 안씀.. 웹 컨텐츠들은 위에서 아래로 채워지면서 내려오기때문에 굳이 가로의 길이를 정해줄 필요가 없다.)
 
 - grid-auto-flows (열이 쌓이는 방향)
-- repeat (표현의 반복을 나타날 때 쓰인다.)
+- repeat (표현의 반복을 나타날 때 쓰인다)
 - minmax // 최소로 잡아줄 크기를 지정
+
 - min-content // 컨텐츠는 최소한의 공간을 차지하라
 - max-content // 컨텐츠는 최대한의 공간을 차지하라
+
+- autofit
+- autofill
+
 
 ## grid-template-areas
 레이아웃을 이름으로 구분하는 방법
@@ -60,6 +65,10 @@ display : grid
     
 ```
 
+# 강력한 Responsive Web을 만드는 스킬 
+```
+ 
+```
 
 
 
