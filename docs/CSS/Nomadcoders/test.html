@@ -9,11 +9,14 @@
     <style>
         .father {
             display : grid;
-            grid-auto-rows: 300px;
+            grid-auto-rows: 100px;
             /* grid-auto-rows: 350?px; */
-            height: 1000px;
-            /* grid-template-rows: 1fr; */
-            grid-template-columns: 2fr repeat(3, 1fr)
+            /* height: 1000px; */
+            /* grid-template-rows: 50px; */
+            grid-template-columns: repeat(4, 1fr)
+            /* justify-content: center; */
+            /* align-content: center; */
+            /* place-items: center; */
         }
 
         .first {
@@ -36,10 +39,10 @@
 <body>
 
     <div class="father">
-        <div class="first"></div>
-        <div class="second"></div>
-        <div class="third"></div>
-        <div class="fourth"></div>
+        <div class="first">1</div>
+        <div class="second">2</div>
+        <div class="third">3</div>
+        <div class="fourth">4</div>
     </div>
     
 </body>

@@ -41,9 +41,16 @@ display : grid
 - min-content // 컨텐츠는 최소한의 공간을 차지하라
 - max-content // 컨텐츠는 최대한의 공간을 차지하라
 
-- autofit
-- autofill
+- auto-fit // 빈자리를 채울 때 까지 채운다.
+- auto-fill // 기존의 레이아웃 그대로 고스트 그리드를 만들어 채운다.
 
+- justify-content // 가로 정렬
+- align-content // 세로 정렬
+- place-content // 가로 세로 정렬
+
+- justify-items // 컨텐츠의 아이템을 가로 정렬
+- align-items // 컨텐츠의 아이템을 세로 정렬
+- place-items // 컨텐츠의 아이템을 가로세로 정렬
 
 ## grid-template-areas
 레이아웃을 이름으로 구분하는 방법
@@ -65,9 +72,9 @@ display : grid
     
 ```
 
-# 강력한 Responsive Web을 만드는 스킬 
+## 강력한 Responsive Web을 만드는 스킬 
 ```
- 
+    repeat(auto-fit, minmax(100px, 1fr))
 ```
 
 
