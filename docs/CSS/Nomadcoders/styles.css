@@ -1,0 +1,7 @@
+/* li:matches(:nth-child(odd), .target){
+    background-color: blue;
+} */
+
+li:not(.target){
+    background-color: red;
+}
