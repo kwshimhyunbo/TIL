@@ -1,7 +1,36 @@
-/* li:matches(:nth-child(odd), .target){
-    background-color: blue;
-} */
-
-li:not(.target){
-    background-color: red;
+/* :root {
+    --awesomeColor: #e74c3c;
 }
+
+li:first-child a {
+    color: var(--awesomeColor);
+}
+
+@custom-selector :--test h1,h2,h3,h4,h5,h6;
+:--test {
+    color: #2ecc71
+}
+
+@custom-media --ipad-size (max-width  850px);
+
+@custom-media --ipod-size (400px < width <=850px);
+ /* == @media (max-width: 850px) and (min-width: 401px) */
+
+/* 
+
+@media (--ipod-size) {
+    body {
+        background: #e74c3c;
+    }
+} */ 
+
+h1 {
+    color:gray;
+}
+h1:hover {
+    /* color: color-mod(red lightness(50%)); */
+    color : gray(20);
+}
+
+
+
