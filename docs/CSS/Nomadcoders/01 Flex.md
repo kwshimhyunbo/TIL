@@ -76,3 +76,21 @@ default로 flex 는 direction이 row 로 방향을 잡고 있기 때문에 가�
 아이템의 컨텐츠가 표현되는 영역을 벗어날 경우에 어떠한 형식으로 보여줄 지에 대해서 결정하는 속성이다.
 
 nowrap 일 경우 최대한 압축해서 그 행에 모든걸 보여주지만, wrap일 경우 컨텐츠를 최대한 확보해서 보여준다.
+
+# Flex-grow, Flex-shrink, Flex-basis
+
+- Flex-grow : 빈 여백의 공간이 있을때의 ratio 만큼 차지하여 공간을 확보함
+- Flex-shrink : 공간이 줄어들때의 차지하는 아이템들의 간격 ratio
+- Flex-basis : 기본 auto로 가변길이값.
+
+
+# Footer 하단에 붙여버리기.
+```
+main {
+   display: flex; 
+}
+ 
+footer {
+   margin-top: auto; 
+}
+```
