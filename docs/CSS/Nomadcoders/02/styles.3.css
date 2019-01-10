@@ -1,0 +1,70 @@
+:root {
+  --bg-color: #fafafc;
+  --left-pad: 20px;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+}
+
+
+.header {
+  padding-left: var(--left-pad);
+  padding-bottom: 10px;
+}
+
+.list__wrapper {
+  padding: 0px var(--padding);
+  margin-bottom: 50px;
+}
+
+.list__wrapper .meal__list{
+   list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.meal__list .meal__item {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  grid-gap: 10px;
+  text-align: center;
+  justify-content: center;
+  transition: opacity 0.1s linear;
+}
+
+.meal__item .meal__icon {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+    height: 50px;
+    width: 50px;
+    transition: box-shadow 0.2s linear;
+    cursor: pointer;
+}
+
+
+
+.meal__list:hover .meal__item {
+  opacity: 0.5;
+}
+
+.meal__list .meal__item:hover {
+  opacity: 1;
+}

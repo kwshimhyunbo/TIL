@@ -26,6 +26,7 @@ h5 {
 }
 
 .navigation .navigation__list {
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(4, 50px);
   list-style-type: none;
