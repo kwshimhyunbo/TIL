@@ -1,0 +1,210 @@
+:root {
+    --left-padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #fafafc;
+  }
+
+
+.header__title {
+    padding-top: 50px;
+    padding-left: var(--left-padding);
+}
+
+.sub__section {
+    
+    padding-top: 10px;
+    padding-left: var(--left-padding);
+    padding-bottom: 10px;
+}
+
+.topic__wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    padding-left: var(--left-padding);
+    grid-auto-columns: minmax(150px, 1fr);
+    grid-gap: 10px;
+    height: 180px;
+    overflow: scroll;
+}
+
+.topic__wrapper .topic{
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+}
+
+.topic .topic__img {
+    border-radius: 18px;
+    background-color: antiquewhite;
+    width: 150px;
+    height: 135px;
+}
+
+.topic__img {
+    background-size: cover;
+    background-position: center center;
+}
+.topic:first-child .topic__img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(https://i.pinimg.com/564x/2a/2f/cc/2a2fcc55aaa4f915005fd74eff7ad849.jpg);
+}
+
+.topic:nth-child(2) .topic__img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(https://i.pinimg.com/564x/16/63/be/1663beea7dfc8f8c2214be5950e7a3fd.jpg);
+}
+
+.topic:nth-child(3) .topic__img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(https://i.pinimg.com/564x/b9/2c/0d/b92c0ded995bd1cd0d74fd88b4527d78.jpg);
+}
+
+.topic:nth-child(4) .topic__img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(https://i.pinimg.com/564x/8f/50/b8/8f50b8354c9336ea68035a99ae9a9b63.jpg);
+}
+
+.ex__subtitle {
+    color: grey;
+
+}
+
+
+.topic .topic__title {
+    padding-top: 5px;
+    font-size: 18px;
+}
+
+.sub__section .ex__title {
+    font-size: 25px;
+}
+
+
+.namecard__wrapper {
+    padding-left: var(--left-padding);
+    padding-right: var(--left-padding);
+    /* padding: 10px; */
+}
+
+.namecard__wrapper .namecard__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    
+    grid-gap: 10px;
+    height: 80px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.namecard__list .namecard__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.icon {
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.content__inner .text__wrapper {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.text__wrapper .name__subtitle{ 
+    font-size: 11px;
+}
+/* .namecard__item .icon {
+    height: 40px;
+    width: 40px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(https://i.pinimg.com/564x/04/be/ed/04beed0b9f8a541714ec838d0a916103.jpg); 
+    margin-right:10px;
+} */
+
+.namecard__item .icon{
+    height: 40px;
+    width: 40px;
+    margin-right:10px;
+}
+.namecard__item:first-child .icon {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(https://i.pinimg.com/564x/db/fa/40/dbfa405b8278f736f2bc9ed4c1616845.jpg); 
+}
+
+.namecard__item:last-child .icon {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(https://i.pinimg.com/564x/85/81/e8/8581e823cd5d55f970ccba3fd1724590.jpg); 
+}
+
+
+.new__info {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 10px;   
+}
+
+.new__info .info__item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.info__item:first-child .info__pics {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(https://i.pinimg.com/564x/45/19/8c/45198cd7d98820ea4dd5bc45169e0fd7.jpg); 
+}
+
+.info__item:nth-child(2) .info__pics {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(https://i.pinimg.com/564x/4c/cf/c1/4ccfc1a60475b2a87b1318b46cd92a00.jpg); 
+}
+
+.info__pics {
+    width:auto;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.info__item {
+    height: 100px;
+}
+
+.info__message {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.info__item .info__message {
+    width:auto;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.info__message .info__text {
+    margin-top: 5px;
+    font-size: 12px;
+}
+

@@ -93,8 +93,8 @@
   .featured .featured__wrapper {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: minmax(200px, 1fr);
-    height: 150px;
+    grid-auto-columns: minmax(100px, 1fr);
+    height: 100px;
     grid-gap: 10px;
     overflow: scroll;
   }
@@ -192,4 +192,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 15px var(--padding);
+}
+
+.sub__section{
+  padding-bottom: 0;
 }
