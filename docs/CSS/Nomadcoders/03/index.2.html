@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.2.css">
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
 </head>
+
 <body>
 
     <header class="header__group">
@@ -14,38 +16,34 @@
         <span class="header__subtitle">Simple knowledge to learn quickly</span>
     </header>
 
-    <div class="grid__list">
-        <div class="grid__item">
-            <h2>Daily Recommend</h2>
-            <p>가수 김나영</p>
-            <p>타이틀곡 '헤어질 수 밖에'로 차트 석권!</p>
-        </div>
-        
-        <div class="grid__item">
-            <img src="http://img.etnews.com/news/article/2016/10/18/cms_temp_article_18164112203223.jpg" alt="">
-            <h4>[쇼케이스]질문에 답하는 가수 김나영</h4>
-            <p>가수 김나영이 18일 오후 서울 강남구 청담동 일지아트홀에서 열린 정규 앨범 ‘프롬 더 하트(From The Heart)’ 쇼케이스에 참석해 무대를 선보였다.</p>
-        </div>
 
-        <div class="grid__item">
-            <img>Daily Recommend</img>
-            <h2>가수 김나영</h2>
-            <p>타이틀곡 '헤어질 수 밖에'로 차트 석권!</p>
-        </div>
-
-        <div class="grid__item">
-            <img>Daily Recommend</img>
-            <h2>가수 김나영</h2>
-            <p>타이틀곡 '헤어질 수 밖에'로 차트 석권!</p>
-        </div>
-
-        <div class="grid__item">
-            <img>Daily Recommend</img>
-            <h2>가수 김나영</h2>
-            <p>타이틀곡 '헤어질 수 밖에'로 차트 석권!</p>
-        </div>
-        
+    <div class="grid__list" >
+        <div class="grid">
+            <!-- .grid-sizer empty element, only used for element sizing -->
+            <div class="grid-sizer"></div>
+            <div class="grid-item">1</div>
+            <div class="grid-item">1</div>
+            <div class="grid-item">1</div>
+            <div class="grid-item">1</div>
+            <div class="grid-item">1</div>
+            <div class="grid-item">1</div>
+            <div class="grid-item">1</div>
+            <div class="grid-item">1</div>
+            <div class="grid-item grid-item--width2">2</div>
+            
+            </div>
     </div>
     
 </body>
+
+<script>
+
+var elem = document.querySelector('.grid');
+var msnry = new Masonry( elem, {
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+});
+</script>
 </html>

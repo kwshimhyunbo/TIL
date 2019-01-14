@@ -1,85 +1,9 @@
-:root {
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell,xw "Open Sans", "Helvetica Neue", sans-serif;
-    background-color: #fafafc;
-    color: rgba(0, 0, 0, 0.8);
-    padding: 0px 15px;
-  }
+.grid-sizer,
+.grid-item { width: 50%; }
+/* 2 columns */
+.grid-item--width2 { width: 40%; }
 
-  .header__group {
-      margin: 40px 0px;
-  }
-  
-  .header__group .header__title {
-      font-size: 43px;
-  }
-
-  .header__group .header__subtitle {
-      font-size: 18px;
-      opacity: 0.5;
-  }
-
-  .grid__list {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 10px;
-      grid-auto-rows: minmax(min-content, max-content);
-  }
-
-  .grid__item {
-    border-radius: 15px;
-  }
-   
-  .grid__item:first-child {
-      display: flex;
-      flex-flow: column;
-      grid-column: span 2;
-      padding: 15px;
-      background-image: url("http://cgeimage.commutil.kr/phpwas/restmb_allidxmake.php?idx=3&simg=2017102307572806361d3244b4fed118176192128.jpg");
-      background-size: cover;
-      
-  }
-
-  .grid__item:nth-child(2) img{
-    max-width: 100%;
-    border-radius: 15px;
-  }
-
- .grid__item:first-child h2{
-     
-    align-self: flex-end;
-    color: whitesmoke;
-
-    width: 30%;
-    margin-bottom: auto;
-    margin-right: 50px;
-}
-.grid__item h4 {
-    margin: 10px 0;
-}
-
-.grid__item:first-child p {
-    margin: 0;
-    color: whitesmoke;
-}
-
-.grid__item:first-child :last-child {
-    align-self: center;
-    
+.grid-item {
+  background-color: red; 
+  margin: 1px;
 }
