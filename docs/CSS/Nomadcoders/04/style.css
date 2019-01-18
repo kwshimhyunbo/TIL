@@ -27,7 +27,7 @@
   .header {
     margin-top: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
   
@@ -54,6 +54,7 @@
     margin: 50px 0;
     margin-bottom: 100px;
   }
+  
   
   .recipe {
     height: 40vh;
