@@ -28,7 +28,7 @@ body {
 }
 
 .header {
-    margin-top: 80px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,7 +49,7 @@ svg {
 }
 
 .main {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .album {
@@ -100,6 +100,8 @@ svg {
     margin-top: 5px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
 }
 
 .album__meta .meta__item {
