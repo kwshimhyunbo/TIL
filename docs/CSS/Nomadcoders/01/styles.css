@@ -132,3 +132,8 @@ ul, li {
 .grid .grid__item:nth-child(15){
     background-color: var(--colorOne);
 }
+
+.grid__tgrid__tempemp {
+    display: flex;
+    justify-content: center;
+}
