@@ -23,9 +23,52 @@ body {
 }  
 
 .header {
-    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 10px;
 }
 
 svg {
     width: var(--iconSize);
+}
+
+.header {
+    display: grid;
+    grid-auto-flow: column;
+    background-image: linear-gradient(to right, #AA6FFE, #83BDF0);
+}
+.header__title__group {
+    width: 70px;
+    display: grid;
+    margin-left: 20px;
+}
+.header__title__text {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 7px;
+}
+
+.header__title__end{
+    text-align: right;
+}
+
+.header__icon__group {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__icon__group svg {
+    margin-right: 29px;
+    fill: white;
+}
+
+.main {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.main__title {
+    text-transform: uppercase;
 }
